@@ -1,0 +1,75 @@
+{
+  "profile": {
+    "name": "ANDREY CARVALHO",
+    "title": "Software Engineer",
+    "photo": "/profile.jpg",
+    "city": "Marechal Deodoro, Al",
+    "email": "ancarvalho6@gmail.com",
+    "social": {
+      "linkedin": {
+        "name": "andreycarvalho",
+        "link": "https://www.linkedin.com/in/andreycarvalho"
+      },
+      "github": {
+        "name": "ancarvalho",
+        "link": "https://github.com/ancarvalho"
+      }
+    }
+  },
+  "summary": "Sou um Programador Autodidata, propenso aos negócios, com objetivo de entrgar exelente software, com orgulho de produzir soluções cujas quais resolvam problemas dos clientes, com contribuições na comunidade. No momento Focado em Backend, microserviços - incluindo Golang, Typescript, Rust, Grpc, GraphQl e Docker ",
+  "projects": [
+   
+    {
+      "name": "Postaurant",
+      "link": "http://github.com/ancarvalho/postaurant",
+      "host": "Github - privado",
+      "period": "Oct 2020 - atual",
+      "descriptions": [
+        "Worked on Shibumi.com, an enterprise software product that manages high impact strategy execution"
+      ]
+    },
+    {
+      "name": "Entusiasta Caffe",
+      "link": "http://github.com/ancarvalho/enthusiast-coffee",
+      "host": "Github - privado",
+      "period": "Dec 2022 - atual",
+      "descriptions": [
+        "Worked on Shibumi.com, an enterprise software product that manages high impact strategy execution"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "name": "Colegio Nossa Senhora Aparecida",
+      "city": "Maceio, AL",
+      "period": "2014 - 2016",
+      "title": "Ensino Medio"
+    }
+  ],
+  "skills": [
+    "JavaScript",
+    "TypeScript",
+    "Tailwindcss",
+    "CSS",
+    "HTML",
+    "Node",
+    "React",
+    "Svelte",
+    "Apollo",
+    "Python",
+    "Rust",
+    "Golang",
+    "Elixir",
+    "Dart",
+    "Flutter",
+    "SQL",
+    "GraphQL",
+    "REST",
+    "Linux",
+    "Git",
+    "Design Patterns",
+    "Docker",
+    "CI/CD",
+    "Open Source"
+  ]
+}
