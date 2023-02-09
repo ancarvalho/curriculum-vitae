@@ -4,7 +4,7 @@
 
 <div class="pb-7">
   <div class="font-semibold text-xl mb-5">
-    Resumo
+    Sumário
   </div>
   <div class="font-extralight text-[1em]">
     {summary}

@@ -18,14 +18,13 @@
   },
   "summary": "Sou um Programador Autodidata, propenso aos negócios, com objetivo de entrgar exelente software, com orgulho de produzir soluções cujas quais resolvam problemas dos clientes, com contribuições na comunidade. No momento Focado em Backend, microserviços - incluindo Golang, Typescript, Rust, Grpc, GraphQl e Docker ",
   "projects": [
-   
     {
       "name": "Postaurant",
       "link": "http://github.com/ancarvalho/postaurant",
       "host": "Github - privado",
       "period": "Oct 2020 - atual",
       "descriptions": [
-        "Worked on Shibumi.com, an enterprise software product that manages high impact strategy execution"
+        "Plataforma para facilitar a venda e controle de produtos para venda presencial e online(planejado)"
       ]
     },
     {
@@ -34,7 +33,18 @@
       "host": "Github - privado",
       "period": "Dec 2022 - atual",
       "descriptions": [
-        "Worked on Shibumi.com, an enterprise software product that manages high impact strategy execution"
+        "Um e-commerce focado em café que visa ensinar e possibilitar para o consumidor cafés gourmets",
+        "uma plataforma social que visa financiar objetivos de Ongs com parte do faturamento"
+      ]
+    },
+    {
+      "name": " ",
+      "link": "http://github.com/ancarvalho/street-sellers",
+      "host": "Github - planejando",
+      "period": "Jan 2023 - atual",
+      "descriptions": [
+        "Com o objetivo de integrar venda de ambulantes com o compradores",
+        "informando a rota, produtos ofertados e sua localização atual"
       ]
     }
   ],
