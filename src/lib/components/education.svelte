@@ -1,11 +1,12 @@
 <script lang="ts">
 	import type { Education } from '$lib/entities/education';
+	import { t } from '$lib/translations';
 
 	export let education: Education[];
 </script>
 
 <div class="pb-7">
-	<div class="font-semibold text-xl mb-5">Educação</div>
+	<div class="font-semibold text-xl mb-5">{$t("menu.education")}</div>
 
 	{#each education as education_place (education_place.title)}
 		<div class="">

@@ -1,9 +1,12 @@
 <script lang="ts">
+	import { t } from "$lib/translations";
+
+
 	export let skills: string[];
 </script>
 
 <div class="pb-7">
-	<div class="font-semibold text-xl mb-5">Skills</div>
+	<div class="font-semibold text-xl mb-5">  {$t("menu.skills")}</div>
 	<div class="">
 		<ul class="flex flex-wrap justify-start items-center pb-4 gap-2">
 			{#each skills as skill (skill)}

@@ -1,11 +1,12 @@
 <script lang="ts">
 	import type { Project } from '$lib/entities/project';
+	import { t } from '$lib/translations';
 	export let projects: Project[];
 </script>
 
 <div class="pb-7">
 	<div class="font-semibold text-xl mb-5">
-    Projetos
+    {$t("menu.projects")}
   </div>
 	{#each projects as project (project.link)}
 	<div class="pb-4">

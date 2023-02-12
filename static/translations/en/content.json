@@ -16,35 +16,35 @@
       }
     }
   },
-  "summary": "Sou um Programador Autodidata, propenso aos negócios, com objetivo de entrgar exelente software, com orgulho de produzir soluções cujas quais resolvam problemas dos clientes, com contribuições na comunidade. No momento Focado em Backend, microserviços - incluindo Golang, Typescript, Rust, Grpc, GraphQl e Docker ",
+  "summary": "A self-driven, business-minded Programmer, with the objective of delivering excellent software, with pride in producing solutions whose solutions solve problems, with contributions to the community. Currently Focused on Backend, microservices - including Golang, Typescript, Rust, Grpc, GraphQl and Docker. ",
   "projects": [
     {
       "name": "Postaurant",
       "link": "http://github.com/ancarvalho/postaurant",
-      "host": "Github - privado",
-      "period": "Oct 2020 - atual",
+      "host": "Github - to be released",
+      "period": "Oct 2020 - present",
       "descriptions": [
-        "Plataforma para facilitar a venda e controle de produtos para venda presencial e online(planejado)"
+        "A plataform to facilitate comercialization and stock controll focused on face-to-face sales and delivery(planned)"
       ]
     },
     {
       "name": "Entusiasta Caffe",
       "link": "http://github.com/ancarvalho/enthusiast-coffee",
-      "host": "Github - privado",
-      "period": "Dec 2022 - atual",
+      "host": "Github - private",
+      "period": "Dec 2022 - present",
       "descriptions": [
-        "Um e-commerce focado em café que visa ensinar e possibilitar para o consumidor cafés gourmets",
-        "uma plataforma social que visa financiar objetivos de Ongs com parte do faturamento"
+        "An e-commerce focused on coffee that aims to teach and enable consumers to enjoy gourmet coffees",
+        "with social platform that aims to finance local NGO goals with part of the revenue"
       ]
     },
     {
       "name": " ",
       "link": "http://github.com/ancarvalho/street-sellers",
-      "host": "Github - planejando",
-      "period": "Jan 2023 - atual",
+      "host": "Github - planned",
+      "period": "Jan 2023 - present",
       "descriptions": [
-        "Com o objetivo de integrar venda de ambulantes com o compradores",
-        "informando a rota, produtos ofertados e sua localização atual"
+        "With the aim of integrating street vendors with buyers",
+        "informing the route, products offered and your current location and an estimated time"
       ]
     }
   ],
@@ -53,7 +53,7 @@
       "name": "Colegio Nossa Senhora Aparecida",
       "city": "Maceio, AL",
       "period": "2014 - 2016",
-      "title": "Ensino Medio"
+      "title": "High School"
     }
   ],
   "skills": [
