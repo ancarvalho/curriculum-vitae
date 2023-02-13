@@ -7,13 +7,38 @@
 	import Projects from '$lib/components/projects.svelte';
 	import Skills from '$lib/components/skills.svelte';
 	import Summary from '$lib/components/summary.svelte';
+	import type { Content } from '$lib/entities/content';
+	import content from '$lib/store/content_storel';
+	import local from '$lib/store/local_store';
+	import { onMount } from 'svelte';
 	import type { PageData } from './$types';
 
 	export let data: PageData;
-	const { education, profile, projects, skills, summary } = data.content!;
+
+	// let { education, profile, projects, skills, summary } : Content  = data.content!
+	let contentValue :Content;
+
+	content.subscribe((value) => {
+		contentValue = value
+	})
+
+	// local.subscribe(async (value) => {
+	// 	const res = await fetch(`/translations/${value}/content.json`)
+  //   const data = await res.json()
+  //   content.set(data)
+	// })
+
+	// $: content = $t("menu.summary") as Content
+	let mounted: boolean = false;
+
+	onMount(() => {
+		mounted = true
+	});
+
+	let { education, profile, projects, skills, summary } : Content  = contentValue!;
 </script>
 
-{#if data.content}
+{#if contentValue && mounted}
 	<header>
 		<title>
 			{profile.name} | {profile.title}
@@ -48,8 +73,6 @@
 			</section>
 		</main>
 	</body>
-	{:else}
-		<div class="">
-			Loading...
-		</div>
+{:else}
+	<div class="">Loading...</div>
 {/if}

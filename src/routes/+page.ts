@@ -1,9 +1,10 @@
 import type { PageLoad } from './$types';
-import { locale } from '$lib/translations';
 import type { Content } from '$lib/entities/content';
+import { locale } from '$lib/translations';
+import content from '$lib/store/content_storel';
 
+export const load = (async ({ params, fetch, }) => {
 
-export const load = (async ({ params, fetch }) => {
 
   if (typeof localStorage !== 'undefined') {
 
@@ -15,13 +16,9 @@ export const load = (async ({ params, fetch }) => {
 
     const res = await fetch(`/translations/${initLocale}/content.json`)
     const data = await res.json()
-
-
-    return {
-      content: data as Content,
-
-    }
+    content.set(data)
   }
+
 
 
 }) satisfies PageLoad;  

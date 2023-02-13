@@ -1,37 +1,39 @@
 <script lang="ts">
+	import '../index.css';
+	import { addTranslations, getTranslationProps, locale, locales, t } from '$lib/translations';
+	import { page } from '$app/stores';
+	import { invalidate, invalidateAll } from '$app/navigation';
+	import  local from '$lib/store/local_store';
 
-  import "../index.css";
-  import { addTranslations, getTranslationProps, locale, locales, t } from '$lib/translations';
-	import { page } from "$app/stores";
-	import { invalidate, invalidateAll } from "$app/navigation";
+	let localValue: string;
 
 
-	const handleLocaleChange = async ({currentTarget}: {currentTarget: HTMLSelectElement}) => {
-    const {value} = currentTarget;
-    const {url} = $page;
-    
 
-    const translationProps = await getTranslationProps(value, url.pathname)
+	const unsubscribe = local.subscribe(async (value) => {
+		localValue = value;
+	});
 
-    addTranslations(...translationProps);
+	const handleLocaleChange = async ({ currentTarget }: { currentTarget: HTMLSelectElement }) => {
+		const { value } = currentTarget;
+		const { url } = $page;
 
-    if ($locale !== value) {
-      $locale = value
-      localStorage.setItem("local", value)
-      await invalidateAll()
-    }
+		const translationProps = await getTranslationProps(value, url.pathname);
 
-    
-  };
+		addTranslations(...translationProps);
 
+		if ($locale !== value) {
+			$locale = value;
+			
+		}
+
+		local.set(value);
+	};
 </script>
 
-
-<select class="absolute top-0 right-0" on:change="{handleLocaleChange}">
-  {#each $locales as l}
-    <option selected={$locale === l}  value="{l}">{$t(`lang.${l}`)}</option>
-  {/each}
+<select class="absolute top-0 right-0" on:change={handleLocaleChange}>
+	{#each $locales as l}
+		<option selected={$locale === localValue} value={l}>{$t(`lang.${l}`)}</option>
+	{/each}
 </select>
-
 
 <slot />

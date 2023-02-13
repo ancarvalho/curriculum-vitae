@@ -2,8 +2,9 @@
 import { loadTranslations, locale } from "$lib/translations";
 import type { LayoutLoad } from "./$types";
 
-export const load = (async ({ url, }) => {
+export const load = (async ({ url,  }) => {
   const { pathname } = url;
+  
 
   if (typeof localStorage !== 'undefined') {
     let defaultLocale = localStorage.getItem("local")
