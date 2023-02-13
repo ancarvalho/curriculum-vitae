@@ -1,18 +1,14 @@
 import type { PageLoad } from './$types';
-import type { Content } from '$lib/entities/content';
 import { locale } from '$lib/translations';
-import content from '$lib/store/content_storel';
+import content from '$lib/stores/content_store';
+import { localvalue } from '$lib/stores/local_store';
 
-export const load = (async ({ params, fetch, }) => {
+export const load = (async ({ fetch, }) => {
 
 
-  if (typeof localStorage !== 'undefined') {
+  if (typeof localStorage !== undefined) {
 
-    let defaultLocale = localStorage.getItem("local")
-    if (!defaultLocale) {
-      defaultLocale = "pt"
-    }
-    const initLocale = locale.get() || defaultLocale;
+    const initLocale = locale.get() || localvalue;
 
     const res = await fetch(`/translations/${initLocale}/content.json`)
     const data = await res.json()

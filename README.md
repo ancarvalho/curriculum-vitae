@@ -7,5 +7,5 @@
  - [x] Education
  - [x] Light Theme
  - [x] Dark Theme
- - [ ] en_us
+ - [x] en_us
  - [x] pt_br

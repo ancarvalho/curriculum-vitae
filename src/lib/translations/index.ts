@@ -14,21 +14,12 @@ export const config = {
       key: 'menu',
       loader: async () => (await import('./en/menu.json')).default,
     },
-    // {
-      // locale: 'en',
-    //   key: 'content',
-    //   loader: async () => (await import('./en/content.json')).default,
-    // },
     {
       locale: 'pt',
       key: 'menu',
       loader: async () => (await import('./pt/menu.json')).default,
     },
-    // {
-    //   locale: 'pt',
-    //   key: 'content',
-    //   loader: async () => (await import('./pt/content.json')).default,
-    // },
+
   ],
 };
 

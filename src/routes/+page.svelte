@@ -8,40 +8,25 @@
 	import Skills from '$lib/components/skills.svelte';
 	import Summary from '$lib/components/summary.svelte';
 	import type { Content } from '$lib/entities/content';
-	import content from '$lib/store/content_storel';
-	import local from '$lib/store/local_store';
+	import content from '$lib/stores/content_store';
 	import { onMount } from 'svelte';
-	import type { PageData } from './$types';
 
-	export let data: PageData;
+	let contentValue: Content | undefined;
 
-	// let { education, profile, projects, skills, summary } : Content  = data.content!
-	let contentValue :Content;
+	content.subscribe((value) => contentValue = value)
 
-	content.subscribe((value) => {
-		contentValue = value
-	})
-
-	// local.subscribe(async (value) => {
-	// 	const res = await fetch(`/translations/${value}/content.json`)
-  //   const data = await res.json()
-  //   content.set(data)
-	// })
-
-	// $: content = $t("menu.summary") as Content
 	let mounted: boolean = false;
 
 	onMount(() => {
-		mounted = true
+		mounted = true;
+		console.log(content);
 	});
-
-	let { education, profile, projects, skills, summary } : Content  = contentValue!;
 </script>
 
-{#if contentValue && mounted}
+{#if mounted && contentValue}
 	<header>
 		<title>
-			{profile.name} | {profile.title}
+			{contentValue.profile.name} | {contentValue.profile.title}
 		</title>
 	</header>
 
@@ -50,10 +35,10 @@
 			<div
 				class="flex flex-col mx-auto gap-4 md:gap-0 md:flex-row justify-between items-center px-4 py-8 max-w-7xl text-black dark:text-white"
 			>
-				<NameTitleCard {profile} />
+				<NameTitleCard profile={contentValue.profile} />
 
-				<ProfileImage imageSrc={profile.photo} />
-				<ContactCard {profile} />
+				<ProfileImage imageSrc={contentValue.profile.photo} />
+				<ContactCard profile={contentValue.profile} />
 			</div>
 		</header>
 
@@ -61,13 +46,13 @@
 			<section class="bg-gray-100 dark:bg-black/90">
 				<div class="flex flex-col md:flex-row mx-auto gap-4 max-w-7xl px-6 py-8">
 					<div class=" w-fit md:w-[60%] text-black dark:text-white">
-						<Summary {summary} />
-						<Projects {projects} />
+						<Summary summary={contentValue.summary} />
+						<Projects projects={contentValue.projects} />
 					</div>
 
 					<div class="w-fit md:w-[40%] text-black dark:text-white">
-						<Education {education} />
-						<Skills {skills} />
+						<Education education={contentValue.education} />
+						<Skills skills={contentValue.skills} />
 					</div>
 				</div>
 			</section>

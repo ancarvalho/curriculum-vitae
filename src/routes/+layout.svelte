@@ -2,16 +2,21 @@
 	import '../index.css';
 	import { addTranslations, getTranslationProps, locale, locales, t } from '$lib/translations';
 	import { page } from '$app/stores';
-	import { invalidate, invalidateAll } from '$app/navigation';
-	import  local from '$lib/store/local_store';
+	import  {local, } from '$lib/stores/local_store';
+	import content from '$lib/stores/content_store';
 
 	let localValue: string;
-
-
 
 	const unsubscribe = local.subscribe(async (value) => {
 		localValue = value;
 	});
+
+
+	const fetchContent= async (value: string) => {
+		const res = await fetch(`/translations/${value}/content.json`)
+    const data = await res.json()
+    content.set(data)
+	}
 
 	const handleLocaleChange = async ({ currentTarget }: { currentTarget: HTMLSelectElement }) => {
 		const { value } = currentTarget;
@@ -23,16 +28,18 @@
 
 		if ($locale !== value) {
 			$locale = value;
-			
+			local.set(value);
+			await fetchContent(value)
+
 		}
 
-		local.set(value);
+		
 	};
 </script>
 
 <select class="absolute top-0 right-0" on:change={handleLocaleChange}>
 	{#each $locales as l}
-		<option selected={$locale === localValue} value={l}>{$t(`lang.${l}`)}</option>
+		<option selected={$locale === l} value={l}>{$t(`lang.${l}`)}</option>
 	{/each}
 </select>
 
