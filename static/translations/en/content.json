@@ -21,24 +21,15 @@
     {
       "name": "Postaurant",
       "link": "http://github.com/ancarvalho/postaurant",
-      "host": "Github - to be released",
+      "host": "Github",
       "period": "Oct 2021 - present",
       "descriptions": [
         "A plataform to facilitate comercialization and stock controll focused on face-to-face sales and delivery(planned)"
       ]
     },
+
     {
-      "name": "Entusiasta Caffe",
-      "link": "http://github.com/ancarvalho/enthusiast-coffee",
-      "host": "Github - private",
-      "period": "Dec 2022 - present",
-      "descriptions": [
-        "An e-commerce focused on coffee that aims to teach and enable consumers to enjoy gourmet coffees",
-        "with social platform that aims to finance local NGO goals with part of the revenue"
-      ]
-    },
-    {
-      "name": " ",
+      "name": "Green City",
       "link": "http://github.com/ancarvalho/street-sellers",
       "host": "Github - planned",
       "period": "Jan 2023 - present",
@@ -50,20 +41,35 @@
   ],
   "education": [
     {
-      "name": "Colegio Nossa Senhora Aparecida",
+      "name": "Ampli",
       "city": "Maceio, AL",
-      "period": "2014 - 2016",
-      "title": "High School"
+      "period": "2023 - 2025",
+      "title": "Analysis and Systems Development"
+    },
+    
+    {
+      "name": "Codecademy",
+      "city": "Maceio, AL - Remote",
+      "period": "2020",
+      "title": "Web Development Skill Path",
+      "link": "https://www.codecademy.com/profiles/ancarvalho/certificates/5b32457b646caa5007c30975"
+    },
+    {
+      "name": "Dataquest.io",
+      "city": "Maceio, AL - Remote",
+      "period": "2020",
+      "title": "Data Scientist in Python PathData Scientist in Python Path",
+      "link": "https://app.dataquest.io/view_cert/RYB7UM3MKBZ2682WM3ID"
     }
   ],
   "skills": [
     "JavaScript",
     "TypeScript",
-    "Tailwindcss",
+    "TailwindCSS",
     "CSS",
     "HTML",
-    "Node",
-    "React",
+    "NodeJS",
+    "ReactJS",
     "Svelte",
     "Apollo",
     "Python",
@@ -79,7 +85,6 @@
     "Git",
     "Design Patterns",
     "Docker",
-    "CI/CD",
-    "Open Source"
+    "CI/CD"
   ]
 }

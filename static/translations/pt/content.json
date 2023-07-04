@@ -21,24 +21,15 @@
     {
       "name": "Postaurant",
       "link": "http://github.com/ancarvalho/postaurant",
-      "host": "Github - a ser lançado",
+      "host": "Github",
       "period": "Oct 2021 - atual",
       "descriptions": [
         "Plataforma para facilitar a venda e controle de produtos para venda presencial e delivery(planejado)"
       ]
     },
+
     {
-      "name": "Entusiasta Caffe",
-      "link": "http://github.com/ancarvalho/enthusiast-coffee",
-      "host": "Github - privado",
-      "period": "Dec 2022 - atual",
-      "descriptions": [
-        "Um e-commerce focado em café que visa ensinar e possibilitar para o consumidor cafés gourmets",
-        "uma plataforma social que visa financiar objetivos de Ongs locais com parte do faturamento"
-      ]
-    },
-    {
-      "name": " ",
+      "name": "Green City",
       "link": "http://github.com/ancarvalho/street-sellers",
       "host": "Github - planejando",
       "period": "Jan 2023 - atual",
@@ -50,20 +41,34 @@
   ],
   "education": [
     {
-      "name": "Colegio Nossa Senhora Aparecida",
+      "name": "Ampli",
       "city": "Maceio, AL",
-      "period": "2014 - 2016",
-      "title": "Ensino Medio"
+      "period": "2023 - 2025",
+      "title": "Análise e Desenvolvimento de Sistemas"
+    },
+    {
+      "name": "Codecademy",
+      "city": "Maceio, AL - Remoto",
+      "period": "2020",
+      "title": "Web Development Skill Path",
+      "link": "https://www.codecademy.com/profiles/ancarvalho/certificates/5b32457b646caa5007c30975"
+    },
+    {
+      "name": "Dataquest.io",
+      "city": "Maceio, AL - Remoto",
+      "period": "2020",
+      "title": "Data Scientist in Python PathData Scientist in Python Path",
+      "link": "https://app.dataquest.io/view_cert/RYB7UM3MKBZ2682WM3ID"
     }
   ],
   "skills": [
     "JavaScript",
     "TypeScript",
-    "Tailwindcss",
+    "TailwindCSS",
     "CSS",
     "HTML",
-    "Node",
-    "React",
+    "NodeJS",
+    "ReactJS",
     "Svelte",
     "Apollo",
     "Python",

@@ -3,4 +3,5 @@ export type Education = {
   city: string;
   period: string;
   title: string;
+  link?: string;
 }
