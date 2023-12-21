@@ -1,0 +1,45 @@
+{
+  "profile": {
+    "name": "ANDREY CARVALHO",
+    "title": "Software Engineer",
+    "photo": "/profile.jpg",
+    "place": "AL - Brazil",
+    "email": "ancarvalho6@gmail.com",
+    "social": [
+      {
+        "network": "LinkedIn",
+        "name": "andreycarvalho",
+        "link": "https://www.linkedin.com/in/andreycarvalho"
+      },
+      {
+        "network": "Github",
+        "name": "ancarvalho",
+        "link": "https://github.com/ancarvalho"
+      }
+    ]
+  },
+  "skills": [
+    "JavaScript",
+    "TypeScript",
+    "TailwindCSS",
+    "CSS",
+    "HTML",
+    "NodeJS",
+    "ReactJS",
+    "Svelte",
+    "Axios",
+    "Python",
+    "Rust",
+    "Golang",
+    "Dart",
+    "Flutter",
+    "SQL",
+    "GraphQL",
+    "REST",
+    "Linux",
+    "Git",
+    "Design Patterns",
+    "Docker",
+    "CI/CD"
+  ]
+}

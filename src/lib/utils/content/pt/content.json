@@ -1,27 +1,11 @@
 {
-  "profile": {
-    "name": "ANDREY CARVALHO",
-    "title": "Software Engineer",
-    "photo": "/profile.jpg",
-    "city": "Marechal Deodoro, Al",
-    "email": "ancarvalho6@gmail.com",
-    "social": {
-      "linkedin": {
-        "name": "andreycarvalho",
-        "link": "https://www.linkedin.com/in/andreycarvalho"
-      },
-      "github": {
-        "name": "ancarvalho",
-        "link": "https://github.com/ancarvalho"
-      }
-    }
-  },
+
   "summary": "Sou um Programador Autodidata, propenso aos negócios, com objetivo de entregar excelente software, com orgulho de produzir soluções cujas quais resolvam problemas, com contribuições na comunidade. Focado em Backend, micro-serviços - incluindo Golang, Typescript, Rust, Grpc, GraphQl e Docker.",
   "projects": [
     {
-      "name": "Postaurant",
-      "link": "http://github.com/ancarvalho/postaurant",
-      "host": "Github",
+      "name": "Posblishment",
+      "link": "http://github.com/ancarvalho/posblishment",
+      "host": "Github - privado",
       "period": "Oct 2021 - atual",
       "descriptions": [
         "Plataforma para facilitar a venda e controle de produtos para venda presencial e delivery(planejado)"
@@ -41,50 +25,24 @@
   ],
   "education": [
     {
-      "name": "Ampli",
+      "name": "Anhanguera - Ampli",
       "city": "Maceio, AL",
       "period": "2023 - 2025",
       "title": "Análise e Desenvolvimento de Sistemas"
     },
     {
       "name": "Codecademy",
-      "city": "Maceio, AL - Remoto",
+      "city": "Remoto",
       "period": "2020",
       "title": "Web Development Skill Path",
       "link": "https://www.codecademy.com/profiles/ancarvalho/certificates/5b32457b646caa5007c30975"
     },
     {
       "name": "Dataquest.io",
-      "city": "Maceio, AL - Remoto",
+      "city": "Remoto",
       "period": "2020",
-      "title": "Data Scientist in Python PathData Scientist in Python Path",
+      "title": "Data Scientist in Python Path",
       "link": "https://app.dataquest.io/view_cert/RYB7UM3MKBZ2682WM3ID"
     }
-  ],
-  "skills": [
-    "JavaScript",
-    "TypeScript",
-    "TailwindCSS",
-    "CSS",
-    "HTML",
-    "NodeJS",
-    "ReactJS",
-    "Svelte",
-    "Apollo",
-    "Python",
-    "Rust",
-    "Golang",
-    "Elixir",
-    "Dart",
-    "Flutter",
-    "SQL",
-    "GraphQL",
-    "REST",
-    "Linux",
-    "Git",
-    "Design Patterns",
-    "Docker",
-    "CI/CD",
-    "Open Source"
   ]
 }

@@ -1,30 +1,14 @@
 {
-  "profile": {
-    "name": "ANDREY CARVALHO",
-    "title": "Software Engineer",
-    "photo": "/profile.jpg",
-    "city": "Marechal Deodoro, Al",
-    "email": "ancarvalho6@gmail.com",
-    "social": {
-      "linkedin": {
-        "name": "andreycarvalho",
-        "link": "https://www.linkedin.com/in/andreycarvalho"
-      },
-      "github": {
-        "name": "ancarvalho",
-        "link": "https://github.com/ancarvalho"
-      }
-    }
-  },
+
   "summary": "A self-driven, business-minded Programmer, with the objective of delivering excellent software, with pride in producing solutions whose solutions solve problems, with contributions to the community. Currently Focused on Backend, microservices - including Golang, Typescript, Rust, Grpc, GraphQl and Docker. ",
   "projects": [
     {
-      "name": "Postaurant",
-      "link": "http://github.com/ancarvalho/postaurant",
-      "host": "Github",
+      "name": "Posblishment",
+      "link": "http://github.com/ancarvalho/posblishment",
+      "host": "Github - private",
       "period": "Oct 2021 - present",
       "descriptions": [
-        "A plataform to facilitate comercialization and stock controll focused on face-to-face sales and delivery(planned)"
+        "An Offline first platform to facilitate commercialization and stock control focused on face-to-face sales and delivery(planned)"
       ]
     },
 
@@ -41,7 +25,7 @@
   ],
   "education": [
     {
-      "name": "Ampli",
+      "name": "Anhanguera - Ampli",
       "city": "Maceio, AL",
       "period": "2023 - 2025",
       "title": "Analysis and Systems Development"
@@ -49,42 +33,17 @@
     
     {
       "name": "Codecademy",
-      "city": "Maceio, AL - Remote",
+      "city": "Remote",
       "period": "2020",
       "title": "Web Development Skill Path",
       "link": "https://www.codecademy.com/profiles/ancarvalho/certificates/5b32457b646caa5007c30975"
     },
     {
       "name": "Dataquest.io",
-      "city": "Maceio, AL - Remote",
+      "city": "Remote",
       "period": "2020",
-      "title": "Data Scientist in Python PathData Scientist in Python Path",
+      "title": "Data Scientist in Python Path",
       "link": "https://app.dataquest.io/view_cert/RYB7UM3MKBZ2682WM3ID"
     }
-  ],
-  "skills": [
-    "JavaScript",
-    "TypeScript",
-    "TailwindCSS",
-    "CSS",
-    "HTML",
-    "NodeJS",
-    "ReactJS",
-    "Svelte",
-    "Apollo",
-    "Python",
-    "Rust",
-    "Golang",
-    "Elixir",
-    "Dart",
-    "Flutter",
-    "SQL",
-    "GraphQL",
-    "REST",
-    "Linux",
-    "Git",
-    "Design Patterns",
-    "Docker",
-    "CI/CD"
   ]
 }

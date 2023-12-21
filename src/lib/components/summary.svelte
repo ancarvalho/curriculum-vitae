@@ -1,15 +1,12 @@
 <script lang="ts">
-	import { t } from "$lib/translations";
-
-
-  export let summary: string
+  import { t, c } from "$lib/store/i18n";
 </script>
 
 <div class="pb-7">
   <div class="font-semibold text-xl mb-5">
-    {$t("menu.summary")}
+    {$t("summary")}
   </div>
-  <div class="font-extralight text-[1em]">
-    {summary}
+  <div class="font-light text-[1em]">
+    {$c.summary}
   </div>
 </div>
