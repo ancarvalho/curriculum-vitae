@@ -15,7 +15,7 @@
 		<div class="flex flex-col">
 			{#each $c.profile.social as s}
 				<a class="hover:text-slate-400" href={s.link} target="_blank" rel="noopener noreferrer">
-					{s.network}
+					{s.network} - {s.name}
 				</a>
 			{/each}
 		</div>
