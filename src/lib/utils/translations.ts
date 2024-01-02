@@ -1,11 +1,11 @@
 export default {
-  en: {
+  pt: {
     "education": "Educação",
     "skills": "Skills",
     "projects": "Projetos",
     "summary": "Sumário"
   },
-  pt: {
+  en: {
     "education": "Education",
     "skills": "Skills",
     "projects": "Projects",
