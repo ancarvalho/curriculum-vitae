@@ -1,12 +1,12 @@
 <script lang="ts">
   import { c } from "$lib/store/i18n";
-  import Summary from "$lib/components/summary.svelte"
-  import NameTitleCard from "$lib/components/name_title_card.svelte"
-  import ProfileImage from "$lib/components/profile_image.svelte"
-  import ContactCard from "$lib/components/contact_card.svelte"
-  import Projects from "$lib/components/projects.svelte"
-  import Education from "$lib/components/education.svelte"
-  import Skills from "$lib/components/skills.svelte"
+  import Summary from "$lib/components/summary.svelte";
+  import NameTitleCard from "$lib/components/name_title_card.svelte";
+  import ProfileImage from "$lib/components/profile_image.svelte";
+  import ContactCard from "$lib/components/contact_card.svelte";
+  import Projects from "$lib/components/projects.svelte";
+  import Education from "$lib/components/education.svelte";
+  import Skills from "$lib/components/skills.svelte";
 </script>
 
 <header>
@@ -20,27 +20,33 @@
     <div
       class="flex flex-col mx-auto gap-4 md:gap-0 md:flex-row justify-between items-center px-4 py-8 max-w-7xl text-black dark:text-white"
     >
-      <NameTitleCard  />
+      <NameTitleCard />
 
-      <ProfileImage  />
-      <ContactCard  />
+      <ProfileImage />
+      <ContactCard />
     </div>
   </header>
 
-  <main>
+  <main class="bg-gray-100 dark:bg-black/90 h-screen">
     <section class="bg-gray-100 dark:bg-black/90">
       <div class="flex flex-col md:flex-row mx-auto gap-4 max-w-7xl px-6 py-8">
         <div class=" w-fit md:w-[60%] text-black dark:text-white">
-          <Summary  />
-          <Projects  />
+          <Summary />
+          <Projects />
         </div>
 
         <div class="w-fit md:w-[40%] text-black dark:text-white">
-          <Education  />
+          <Education />
           <Skills />
         </div>
       </div>
     </section>
+    <ul class="hidden print:block absolute print:text-gray-100 text-[12px]">
+      {#each $c.metadata as m}
+        <li>
+          {m}
+        </li>
+      {/each}
+    </ul>
   </main>
 </body>
-
